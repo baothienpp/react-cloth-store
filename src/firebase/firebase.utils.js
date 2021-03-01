@@ -16,7 +16,7 @@ firebase.initializeApp(config);
 
 export const fs = firebase.firestore();
 
-export const convertCollectionsSnapshopToMap = (collections) => {
+export const convertCollectionsSnapshotToMap = (collections) => {
   const transformedCollection = collections.docs.map((doc) => {
     const { title, items } = doc.data();
     return {
